@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Palindrome.css">
+</head>
+<body>
+    <div class="division">
+            <h3>Palindrome Checker</h3>
+            <p>Enter a sentence to check if its a plindrome or not</p>
+            <input type="text"  id="palin">
+            <button type="button" onclick="display()">Check</button>
+            <h6 id="out"></h6>
+    </div>
+</body>
+        <script>
+            //  let button=document.querySelector("button")
+            //     button.addEventListener('click',display)
+            var a
+            var b
+            var c
+            var d
+            var e
+            function display(){
+                    a=document.querySelector("#palin").value
+                    b=a.split("")
+                    c=b.reverse()
+                    d=c.join("")
+                    
+                    if(a==d){
+                        e="It's a Palindrome"
+                        document.querySelector("#out").innerHTML=e
+                        }
+                    else{
+                        e="It's not a Palindrome"
+                        document.querySelector("#out").innerHTML=e
+                    }
+                }
+               
+        </script>
+</html>
